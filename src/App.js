@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
+import {Sidebar} from './containers/Sidebar'
+import {MessageList} from './containers/MessageList'
+import {AddMessage} from './containers/AddMessage'
 
 class App extends Component {
   render() {
     return (
       <div className="container">
-        <aside className="sidebar">Users</aside>
+        <Sidebar />
         <section className="main">
           <MessageList />
           <AddMessage />

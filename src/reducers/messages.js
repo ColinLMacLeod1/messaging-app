@@ -1,4 +1,4 @@
-const messages = (state = [], actions) => {
+const messages = (state = [], action) => {
   switch (action.type) {
     case 'ADD_MESSAGE':
     case 'MESSAGE_RECEIVED':
@@ -6,7 +6,7 @@ const messages = (state = [], actions) => {
         {
           message: action.message,
           author: action.author,
-          id action.id
+          id: action.id
         }
       ])
     default:
