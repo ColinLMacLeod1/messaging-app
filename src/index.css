@@ -4,7 +4,7 @@ body {
   font-family: sans-serif;
 }
 
-#container {
+.container {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-areas: "sidebar main";
@@ -12,11 +12,11 @@ body {
   height: 100vh;
 }
 
-#main {
+.main {
   grid-area: main;
 }
 
-#new-message {
+.new-message {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -25,11 +25,11 @@ body {
   border-top: 1px solid #3f3f3f;
 }
 
-#message-list {
+.message-list {
   padding: 5px 0 0 5px;
 }
 
-#sidebar {
+.sidebar {
   grid-area: sidebar;
   padding: 5px 0 0 5px;
   border-right: 1px solid #3f3f3f;
