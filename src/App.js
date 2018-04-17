@@ -7,8 +7,8 @@ class App extends Component {
       <div className="container">
         <aside className="sidebar">Users</aside>
         <section className="main">
-          <section className="messages-list">Messages List</section>
-          <section className="new-message">New Message</section>
+          <MessageList />
+          <AddMessage />
         </section>
       </div>
     );
