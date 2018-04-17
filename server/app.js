@@ -6,7 +6,7 @@ const users = []
 
 const broadcast = (data, socket) => {
   server.clients.forEach(client => {
-    if (client.readyState === WebSocket.OPEN && cient !== socket) {
+    if (client.readyState === WebSocket.OPEN && client !== socket) {
       client.send(JSON.stringify(data))
     }
   })

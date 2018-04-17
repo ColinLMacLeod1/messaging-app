@@ -11,7 +11,7 @@ const setupSocket = (dispatch, username) => {
     }))
   }
   socket.onmessage = (e) => {
-    const data = JSON.parse(event.data)
+    const data = JSON.parse(e.data)
     switch (data.type) {
       case types.ADD_MESSAGE:
         dispatch(messageReceived(data.message, data.author))
